@@ -7,10 +7,5 @@ releases:
     namespace: ahmed-playground
     chart: bitnami/nginx
     values:
-      - replicaCount: 1
-        image:
-          tag: latest
+      - values.yaml
       - secret.yaml
-      - extraEnvVars:
-          - name: TEST_SECRET
-            value: {{ .Values.TEST_SECRET | quote }}

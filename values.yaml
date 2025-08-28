@@ -1,0 +1,6 @@
+replicaCount: 1
+image:
+  tag: latest
+extraEnvVars:
+  - name: TEST_SECRET
+    value: {{ .Values.TEST_SECRET | quote }}
