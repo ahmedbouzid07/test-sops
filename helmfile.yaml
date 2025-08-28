@@ -12,3 +12,7 @@ releases:
           tag: latest
     secrets:
       - secret.yaml
+  # Raw Secret via Kustomize
+  - name: raw-secret
+    namespace: ahmed-playground
+    kustomize: ./secret-kustomize
