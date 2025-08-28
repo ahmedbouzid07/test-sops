@@ -7,5 +7,8 @@ releases:
     namespace: ahmed-playground
     chart: bitnami/nginx
     values:
-      - values.yaml
+      - replicaCount: 1
+        image:
+          tag: latest
+    secrets:
       - secret.yaml
