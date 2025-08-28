@@ -15,4 +15,4 @@ releases:
   # Raw Secret via Kustomize
   - name: raw-secret
     namespace: ahmed-playground
-    kustomize: ./secret-kustomize
+    chart: ./secret-kustomize
